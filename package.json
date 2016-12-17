@@ -1,0 +1,33 @@
+{
+  "name": "live-chat-app",
+  "version": "1.0.0",
+  "description": "\u001b[2~\u001b[2~A real time chatting application using nodejs and socket.io",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crufener/live-chat-app.git"
+  },
+  "keywords": [
+    "live",
+    "chat",
+    "nodejs",
+    "socket.io",
+    "angular",
+    "mobile"
+  ],
+  "author": "Craig Rufener",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crufener/live-chat-app/issues"
+  },
+  "homepage": "https://github.com/crufener/live-chat-app#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "path": "^0.12.7",
+    "socket.io": "^1.7.2"
+  }
+}
