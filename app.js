@@ -16,7 +16,16 @@ app.get('/', (req, res) => {
 
 io.on('connection', ((socket) => {
     console.log("There was a connection!!");
+    socket.on('disconnect', (() => {
+        console.log('user disconnected!');
+    }));
 }));
+
+io.on('connection', function(socket){
+    socket.on('chat message', function(msg){
+        io.emit('chat message', msg);
+    });
+});
 
 //====Start server =========//
 server.listen(3000, (() => {
